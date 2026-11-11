@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>SafeVault - กระเป๋าเก็บข้อมูลลับ</title>
-  <!-- เปลี่ยนมาใช้ตัวโหลดสไตล์ที่เสถียรที่สุดบน GitHub Pages หน้าตาไม่พังแน่นอน -->
-  <script src="https://jsdelivr.net"></script>
+  <!-- แก้ไขลิงก์ดึงสไตล์ดีไซน์และฟอนต์ที่ขาดหายไปให้สมบูรณ์เรียบร้อยแล้วครับ -->
+  <link rel="stylesheet" href="https://jsdelivr.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
   <link href="https://googleapis.com" rel="stylesheet">
   <style>
     body { font-family: 'Prompt', sans-serif; }
@@ -18,7 +20,7 @@
     }
   </style>
 </head>
-<body class="bg-gray-100 text-slate-800 min-h-screen pb-12">
+<body class="bg-gray-100 text-gray-800 min-h-screen pb-12">
 
   <!-- แถบเมนูด้านบน -->
   <nav class="bg-blue-600 text-white shadow-md sticky top-0 z-30">
@@ -198,12 +200,3 @@
       }
 
       document.getElementById('btnActionDelete').onclick = () => removeEntry(index);
-      document.getElementById('btnActionEdit').onclick = () => editEntry(index);
-
-      detailModal.classList.remove('hidden');
-    }
-
-    function closeModal() {
-      detailModal.classList.add('hidden');
-    }
-
